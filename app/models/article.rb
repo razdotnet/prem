@@ -1,5 +1,8 @@
 class Article < ActiveRecord::Base
 
+	extend FriendlyId
+	friendly_id :title, use: :slugged
+	
 	has_many :parts
 	belongs_to :user
 	has_attached_file :attachment, styles: {medium: "300x300", thumb: "100x100"}

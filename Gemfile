@@ -49,3 +49,4 @@ gem "paperclip", "~> 4.2"
 gem 'devise'
 gem 'will_paginate'
 gem 'rails_12factor', group: :production
+gem 'friendly_id', '~> 5.1.0'
