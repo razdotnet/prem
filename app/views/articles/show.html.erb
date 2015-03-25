@@ -1,0 +1,39 @@
+<div class="row">
+	<div class="article-holder">
+		<div class="article-header">
+			<%= image_tag @article.attachment.url %>
+		</div>
+
+		<div class="article-info">
+			<div class="row">
+				<div class="large-12 columns text-center">
+					<h3><%= @article.title %></h3>
+					<span>posted <%= time_posted(@article.created_at) %></span>
+				</div>
+			</div>
+			<div class="spacing"></div>
+		</div>
+
+		<div class="article-content">
+			<div class="row">
+				<div class="large-10 columns">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae leo vitae dolor dignissim pharetra eget in justo. Donec elementum non odio accumsan tempus. Mauris a interdum tortor. Maecenas ligula est, commodo vehicula interdum vitae, iaculis vel augue. Nullam lectus risus, fringilla vel neque nec, porta blandit quam. Vestibulum eget orci vitae neque mollis hendrerit. Suspendisse mauris libero, efficitur ut lectus ac, bibendum condimentum odio. Phasellus convallis ex ac ullamcorper ultricies. In ultrices tempus metus non viverra. Donec tellus libero, laoreet eu magna ut, fermentum tincidunt nibh. Vivamus molestie fermentum nisi, sit amet faucibus ex fringilla et. Phasellus rutrum est sed lectus viverra scelerisque. Suspendisse consequat tellus semper, accumsan arcu ac, tincidunt libero. Suspendisse egestas sit amet urna sit amet blandit. In lacinia tincidunt lorem. Nam posuere nunc sit amet blandit convallis. 
+					</p>
+				</div>
+
+				<div class="large-2 columns">
+					<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+						<!-- side ad -->
+						<ins class="adsbygoogle"
+						     style="display:inline-block;width:300px;height:600px"
+						     data-ad-client="ca-pub-6039615735782011"
+						     data-ad-slot="8442882888"></ins>
+						<script>
+						(adsbygoogle = window.adsbygoogle || []).push({});
+						</script>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
