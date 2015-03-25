@@ -47,3 +47,5 @@ end
 
 gem "paperclip", "~> 4.2"
 gem 'devise'
+gem 'will_paginate'
+gem 'rails_12factor', group: :production

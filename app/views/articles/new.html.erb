@@ -2,5 +2,11 @@
 	<%= f.text_field :title %>
 	<%= f.file_field :attachment %>
 	<%= f.text_field :article_long %>
+	<br><br>
+	<%= f.fields_for :parts do |part| %>
+		<%= part.text_field :part_title, placeholder: 'part title' %>
+		<%= part.text_field :part_description, placeholder: 'part description' %>
+	<% end %> 
+
 	<%= f.submit %>
 <% end %>

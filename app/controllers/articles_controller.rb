@@ -11,6 +11,7 @@ class ArticlesController < ApplicationController
 
 	def new	
 		@article = Article.new
+		2.times {@article.parts.build}
 	end
 
 	def create
@@ -24,6 +25,8 @@ class ArticlesController < ApplicationController
 	end
 
 	def show
+		@article = Article.find(params[:id])
+		@parts = @article.parts.paginate(page: params[:page], per_page: 1)
 	end
 
 	private
@@ -33,6 +36,6 @@ class ArticlesController < ApplicationController
 		end
 
 		def article_params
-			params.require(:article).permit(:title, :user_id, :attachment, :article_long)
+			params.require(:article).permit(:title, :user_id, :attachment, :article_long, parts_attributes: [:part_title, :part_description])
 		end
 end
