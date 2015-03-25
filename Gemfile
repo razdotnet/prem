@@ -47,5 +47,3 @@ end
 
 gem "paperclip", "~> 4.2"
 gem 'devise'
-
-ruby "2.2.0"
