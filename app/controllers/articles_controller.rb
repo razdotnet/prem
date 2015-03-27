@@ -4,10 +4,10 @@ class ArticlesController < ApplicationController
 
 	before_action :find_article, only: [:show]
 
-	def index
-		@top_articles = Article.top(3)
-		@recent_articles = Article.all
-	end
+  def index
+  	@top_articles = Article.top(3)
+	@recent_articles = Article.all
+  end
 
 	def new	
 		@article = Article.new
