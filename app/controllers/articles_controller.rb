@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
 
 	def new	
 		@article = Article.new
-		2.times {@article.parts.build}
+		10.times {@article.parts.build}
 	end
 
 	def create
