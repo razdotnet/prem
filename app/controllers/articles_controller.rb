@@ -1,12 +1,11 @@
 class ArticlesController < ApplicationController
 
 	layout 'pictures', only: [:show]
-
 	before_action :find_article, only: [:show]
 
   def index
   	@top_articles = Article.top(3)
-	@recent_articles = Article.all
+		@recent_articles = Article.all
   end
 
 	def new	
